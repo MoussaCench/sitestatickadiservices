@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 70" width="280" height="70">
+  <defs>
+    <style>
+      .logo-text { font-family: 'Arial Black', Arial, sans-serif; font-weight: 900; fill: #ffffff; }
+      .logo-subtext { font-family: Arial, sans-serif; font-weight: 600; fill: #ffffff; }
+      .logo-accent { fill: #ffffff; stroke: #ffffff; }
+    </style>
+  </defs>
+  
+  <!-- Kadi Text -->
+  <text x="5" y="42" class="logo-text" font-size="32" letter-spacing="2">KADI</text>
+  
+  <!-- Services Text -->
+  <text x="5" y="60" class="logo-subtext" font-size="16" letter-spacing="1">SERVICES</text>
+  
+  <!-- Separator line -->
+  <line x1="155" y1="15" x2="155" y2="55" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Auto Prestige Text -->
+  <text x="170" y="42" class="logo-text" font-size="28" letter-spacing="1">AUTO</text>
+  <text x="170" y="60" class="logo-text" font-size="28" letter-spacing="1">PRESTIGE</text>
+</svg>
+

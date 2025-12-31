@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kadi Services Auto Prestige - La meilleure solution pour vos véhicules</title>
+    <meta name="description" content="Service de lavage automobile à domicile. Réservation en ligne, suivi en temps réel. Services disponibles 7j/7 de 8h à 23h.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="images/logo-kadi.png" alt="Kadi Services" class="logo-nav" onerror="this.src='images/logo-kadi.jpg'; this.onerror=function(){this.src='images/logo-kadi.svg';};">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#apps">Application</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <!-- Hero Background Carousel -->
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="hero-background" style="background-image: url('images/hero-background-1.jpg');"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hero-background" style="background-image: url('images/hero-background-2.jpg');"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hero-background" style="background-image: url('images/hero-background-3.jpg');"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hero-background" style="background-image: url('images/hero-background-4.jpg');"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 hero-content">
+                    <div class="hero-text animate-fade-in">
+                        <h1 class="display-2 fw-bold mb-4">Kadi Services</h1>
+                        <h2 class="display-4 mb-4">Auto Prestige</h2>
+                        <p class="lead slogan mb-4">KS auto prestige<br>La meilleure solution pour vos véhicules</p>
+                        <p class="mb-4 subtitle">Le Lavage Qui se Déplace Pour Vous</p>
+                        <p class="mb-5 hero-description">
+                            Nos chauffeurs professionnels récupèrent votre véhicule directement chez vous, 
+                            effectuent le service de qualité et vous le ramènent propre et brillant. 
+                            Plus besoin de vous déplacer !
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#apps" class="btn btn-primary btn-lg me-3 animate-scale">Télécharger l'app</a>
+                            <a href="#services" class="btn btn-outline-light btn-lg animate-scale">Nos services</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image animate-slide-in">
+                        <img src="images/app-mockup.png" alt="Application Kadi Services" class="app-mockup">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#services"><i class="bi bi-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title animate-fade-in">Nos Services</h2>
+                    <div class="title-line"></div>
+                    <p class="lead mt-4">Des services professionnels à votre domicile</p>
+                    <p class="mt-3">Nos chauffeurs viennent récupérer votre véhicule, effectuent le service et vous le ramènent propre et brillant</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card animate-fade-up">
+                        <div class="service-icon">
+                            <i class="bi bi-droplet-fill"></i>
+                        </div>
+                        <h4>Lavage Automobile</h4>
+                        <p>Lavage complet et professionnel de votre véhicule, directement à votre domicile ou lieu de travail.</p>
+                        <ul class="service-list">
+                            <li>Lavage Standard</li>
+                            <li>Lavage Complet</li>
+                            <li>Lavage Premium</li>
+                            <li>Lavage Express</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card animate-fade-up">
+                        <div class="service-icon">
+                            <i class="bi bi-calendar-check"></i>
+                        </div>
+                        <h4>Par Commande</h4>
+                        <p>Réservez un service de lavage pour une durée spécifique selon vos besoins.</p>
+                        <ul class="service-list">
+                            <li>Réservation en ligne</li>
+                            <li>Choix du créneau horaire</li>
+                            <li>Service à domicile</li>
+                            <li>Suivi en temps réel</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card animate-fade-up">
+                        <div class="service-icon">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <h4>Multi Espace</h4>
+                        <p>Déplacez-vous vers notre espace multi-services pour profiter de nos installations.</p>
+                        <ul class="service-list">
+                            <li>Installations modernes</li>
+                            <li>Service rapide</li>
+                            <li>Tarifs attractifs</li>
+                            <li>Disponible 7j/7</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card animate-fade-up">
+                        <div class="service-icon">
+                            <i class="bi bi-tools"></i>
+                        </div>
+                        <h4>Entretien de Véhicules</h4>
+                        <p>Services d'entretien complet pour maintenir votre véhicule en parfait état.</p>
+                        <ul class="service-list">
+                            <li>Nettoyage intérieur</li>
+                            <li>Polish et lustrage</li>
+                            <li>Entretien général</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card animate-fade-up">
+                        <div class="service-icon">
+                            <i class="bi bi-fuel-pump"></i>
+                        </div>
+                        <h4>Vidange d'Huile</h4>
+                        <p>Service professionnel de vidange d'huile pour assurer la longévité de votre moteur.</p>
+                        <ul class="service-list">
+                            <li>Huiles de qualité</li>
+                            <li>Service rapide</li>
+                            <li>Professionnels certifiés</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card animate-fade-up">
+                        <div class="service-icon">
+                            <i class="bi bi-circle-fill"></i>
+                        </div>
+                        <h4>Collage de Pneus</h4>
+                        <p>Réparation et collage de pneus pour garantir votre sécurité sur la route.</p>
+                        <ul class="service-list">
+                            <li>Réparation rapide</li>
+                            <li>Matériel professionnel</li>
+                            <li>Garantie qualité</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-item text-center animate-fade-up">
+                        <i class="bi bi-clock-history feature-icon"></i>
+                        <h5>Gain de Temps</h5>
+                        <p>Plus besoin de vous déplacer</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-item text-center animate-fade-up">
+                        <i class="bi bi-person-check feature-icon"></i>
+                        <h5>Service Professionnel</h5>
+                        <p>Chauffeurs experts à domicile</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-item text-center animate-fade-up">
+                        <i class="bi bi-calendar-range feature-icon"></i>
+                        <h5>Flexibilité</h5>
+                        <p>Choisissez votre créneau</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-item text-center animate-fade-up">
+                        <i class="bi bi-shield-check feature-icon"></i>
+                        <h5>Paiement Sécurisé</h5>
+                        <p>Transactions protégées</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apps Section -->
+    <section id="apps" class="apps-section py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title animate-fade-in">Application Mobile</h2>
+                    <div class="title-line"></div>
+                    <p class="lead mt-4">Téléchargez notre application pour iOS et Android</p>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    <div class="app-card animate-fade-up">
+                        <div class="app-icon">
+                            <i class="bi bi-phone"></i>
+                        </div>
+                        <h3>Kadi Services Auto Prestige</h3>
+                        <p class="app-description">Réservez vos services de lavage en quelques clics, directement depuis votre smartphone</p>
+                        <ul class="app-features">
+                            <li><i class="bi bi-check-circle"></i> Création de compte sécurisée</li>
+                            <li><i class="bi bi-check-circle"></i> Gestion de plusieurs véhicules</li>
+                            <li><i class="bi bi-check-circle"></i> Réservation en ligne</li>
+                            <li><i class="bi bi-check-circle"></i> Suivi en temps réel</li>
+                            <li><i class="bi bi-check-circle"></i> Historique complet</li>
+                            <li><i class="bi bi-check-circle"></i> Notifications instantanées</li>
+                            <li><i class="bi bi-check-circle"></i> Paiement sécurisé</li>
+                        </ul>
+                        <div class="app-buttons mt-4">
+                            <a href="https://apps.apple.com/app/kadi-services-auto-prestige/id[ID_APP]" target="_blank" rel="noopener noreferrer" class="btn btn-app me-3">
+                                <i class="bi bi-apple"></i> App Store
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.kadiautoprestige.client" target="_blank" rel="noopener noreferrer" class="btn btn-app">
+                                <i class="bi bi-google-play"></i> Google Play
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4 animate-fade-in">Horaires d'Ouverture</h2>
+                    <div class="schedule-card animate-slide-in-left">
+                        <div class="schedule-item">
+                            <i class="bi bi-calendar-week"></i>
+                            <div>
+                                <h5>Disponibilité</h5>
+                                <p>Du lundi au dimanche</p>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <i class="bi bi-clock"></i>
+                            <div>
+                                <h5>Heures</h5>
+                                <p>De 8h00 à 23h00</p>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <i class="bi bi-hourglass-split"></i>
+                            <div>
+                                <h5>Réservation</h5>
+                                <p>Minimum 1 heure à l'avance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="info-card animate-slide-in-right">
+                        <h3>Pourquoi nous choisir ?</h3>
+                        <ul class="info-list">
+                            <li><i class="bi bi-check2-circle"></i> Service à domicile professionnel</li>
+                            <li><i class="bi bi-check2-circle"></i> Matériel de qualité premium</li>
+                            <li><i class="bi bi-check2-circle"></i> Chauffeurs certifiés</li>
+                            <li><i class="bi bi-check2-circle"></i> Paiement sécurisé</li>
+                            <li><i class="bi bi-check2-circle"></i> Suivi en temps réel</li>
+                            <li><i class="bi bi-check2-circle"></i> Disponibilité 7j/7</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title animate-fade-in">Contactez-Nous</h2>
+                    <div class="title-line"></div>
+                    <p class="lead mt-4">Nous sommes à votre disposition pour toute question</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="contact-card text-center animate-fade-up">
+                        <i class="bi bi-envelope contact-icon"></i>
+                        <h5>Email</h5>
+                        <p><a href="mailto:contact@kadiservices.ml">contact@kadiservices.ml</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-card text-center animate-fade-up">
+                        <i class="bi bi-telephone contact-icon"></i>
+                        <h5>Téléphone</h5>
+                        <p><a href="tel:+22376000001">+223 76 00 00 01</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-card text-center animate-fade-up">
+                        <i class="bi bi-geo-alt contact-icon"></i>
+                        <h5>Adresse</h5>
+                        <p>ACI 2000, Bamako, Mali</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <img src="images/logo-kadi.png" alt="Kadi Services" class="logo-footer mb-3" onerror="this.src='images/logo-kadi.jpg'; this.onerror=function(){this.src='images/logo-kadi.svg';};">
+                    <p class="footer-text">KS auto prestige - La meilleure solution pour vos véhicules. Service de lavage automobile professionnel à domicile.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="footer-title">Liens Rapides</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#apps">Applications</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="footer-title">Informations</h5>
+                    <ul class="footer-info">
+                        <li><i class="bi bi-clock"></i> 7j/7 de 8h à 23h</li>
+                        <li><i class="bi bi-envelope"></i> contact@kadiservices.ml</li>
+                        <li><i class="bi bi-telephone"></i> +223 76 00 00 01</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-bottom">
+                        <p>&copy; 2025 Kadi Services Auto Prestige. Tous droits réservés.</p>
+                        <div class="footer-dev">
+                            <span>Développé par</span>
+                            <img src="images/logo-smartml.png" alt="Smart ML" class="logo-dev" onerror="this.src='images/logo-smartml.jpg'; this.onerror=function(){this.src='images/logo-smartml.svg';};">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
