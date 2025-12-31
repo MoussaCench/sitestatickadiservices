@@ -97,6 +97,16 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Initialize hero carousel manually if needed
+    const heroCarousel = document.querySelector('#heroCarousel');
+    if (heroCarousel) {
+        const carousel = new bootstrap.Carousel(heroCarousel, {
+            interval: 5000,
+            wrap: true,
+            ride: 'carousel'
+        });
+    }
 });
 
 // ============================================
