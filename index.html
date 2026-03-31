@@ -44,22 +44,11 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
-        <!-- Hero Background Carousel -->
-        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="hero-background" style="background-image: url('images/hero-background-1.jpg');"></div>
-                </div>
-                <div class="carousel-item">
-                    <div class="hero-background" style="background-image: url('images/hero-background-2.jpg');"></div>
-                </div>
-                <div class="carousel-item">
-                    <div class="hero-background" style="background-image: url('images/hero-background-3.jpg');"></div>
-                </div>
-                <div class="carousel-item">
-                    <div class="hero-background" style="background-image: url('images/hero-background-4.jpg');"></div>
-                </div>
-            </div>
+        <!-- Hero Background Video -->
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="https://res.cloudinary.com/dbi9atr3d/video/upload/v1774914544/gemini_generated_video_6FBDFDB9_mpoqhj.mov" type="video/mp4">
+            </video>
         </div>
         <div class="hero-overlay"></div>
         <div class="container">
@@ -259,12 +248,15 @@
                             <li><i class="bi bi-check-circle"></i> Notifications instantanées</li>
                             <li><i class="bi bi-check-circle"></i> Paiement sécurisé</li>
                         </ul>
-                        <div class="app-buttons mt-4">
+                        <div class="app-buttons mt-4" style="position: relative; z-index: 10;">
                             <a href="https://apps.apple.com/app/kadi-services-auto-prestige/id[ID_APP]" target="_blank" rel="noopener noreferrer" class="btn btn-app me-3">
                                 <i class="bi bi-apple"></i> App Store
                             </a>
-                            <a href="https://play.google.com/store/apps/details?id=com.kadiautoprestige.client" target="_blank" rel="noopener noreferrer" class="btn btn-app">
+                            <a href="https://play.google.com/store/apps/details?id=com.kadiautoprestige.client" target="_blank" rel="noopener noreferrer" class="btn btn-app me-3">
                                 <i class="bi bi-google-play"></i> Google Play
+                            </a>
+                            <a href="https://drive.google.com/file/d/1e5Sxb-2tezuLb1CjDKfJ644TsUsf2rlf/view?usp=share_link" target="_blank" rel="noopener noreferrer" class="btn btn-app btn-android">
+                                <i class="bi bi-android2"></i> Télécharger APK Android
                             </a>
                         </div>
                     </div>
@@ -331,25 +323,44 @@
                 </div>
             </div>
             <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="contact-card text-center animate-fade-up">
-                        <i class="bi bi-envelope contact-icon"></i>
-                        <h5>Email</h5>
-                        <p><a href="mailto:contact@kadiservices.ml">contact@kadiservices.ml</a></p>
-                    </div>
-                </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-3">
                     <div class="contact-card text-center animate-fade-up">
                         <i class="bi bi-telephone contact-icon"></i>
                         <h5>Téléphone</h5>
-                        <p><a href="tel:+22376000001">+223 76 00 00 01</a></p>
+                        <p><a href="tel:+22376853530">+223 76 85 35 30</a></p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="contact-card text-center animate-fade-up">
+                        <i class="bi bi-whatsapp contact-icon"></i>
+                        <h5>WhatsApp</h5>
+                        <p><a href="https://wa.me/22376853530" target="_blank" rel="noopener noreferrer">+223 76 85 35 30</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="contact-card text-center animate-fade-up">
+                        <i class="bi bi-instagram contact-icon"></i>
+                        <h5>Instagram</h5>
+                        <p><a href="https://www.instagram.com/g.kadi.services/" target="_blank" rel="noopener noreferrer">@g.kadi.services</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="contact-card text-center animate-fade-up">
+                        <i class="bi bi-tiktok contact-icon"></i>
+                        <h5>TikTok</h5>
+                        <p><a href="https://www.tiktok.com/@kservices8?_r=1&_t=ZS-94y5Yy23Uvw" target="_blank" rel="noopener noreferrer">@kservices8</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
                     <div class="contact-card text-center animate-fade-up">
                         <i class="bi bi-geo-alt contact-icon"></i>
                         <h5>Adresse</h5>
-                        <p>ACI 2000, Bamako, Mali</p>
+                        <p class="mb-3">HAMDALLAYE près du monument Mamadou Konate<br>Bamako, Mali</p>
+                        <a href="https://maps.app.goo.gl/7F9AtTYm4M8SSPwT8" target="_blank" rel="noopener noreferrer" class="btn btn-map">
+                            <i class="bi bi-map"></i> Voir sur Google Maps
+                        </a>
                     </div>
                 </div>
             </div>
@@ -362,7 +373,7 @@
             <div class="row g-4">
                 <div class="col-lg-4">
                     <img src="images/logo-kadi.png" alt="Kadi Services" class="logo-footer mb-3" onerror="this.src='images/logo-kadi.jpg'; this.onerror=function(){this.src='images/logo-kadi.svg';};">
-                    <p class="footer-text">KS auto prestige - La meilleure solution pour vos véhicules. Service de lavage automobile professionnel à domicile.</p>
+                    <p class="footer-text">Kadi Auto Prestige - La meilleure solution pour vos véhicules. Service de lavage automobile professionnel à domicile.</p>
                 </div>
                 <div class="col-lg-4">
                     <h5 class="footer-title">Liens Rapides</h5>
@@ -377,9 +388,20 @@
                     <h5 class="footer-title">Informations</h5>
                     <ul class="footer-info">
                         <li><i class="bi bi-clock"></i> 7j/7 de 8h à 23h</li>
-                        <li><i class="bi bi-envelope"></i> contact@kadiservices.ml</li>
-                        <li><i class="bi bi-telephone"></i> +223 76 00 00 01</li>
+                        <li><i class="bi bi-telephone"></i> +223 76 85 35 30</li>
+                        <li><i class="bi bi-geo-alt"></i> HAMDALLAYE, Bamako</li>
                     </ul>
+                    <div class="footer-social mt-3">
+                        <a href="https://wa.me/22376853530" target="_blank" rel="noopener noreferrer" class="social-link" title="WhatsApp">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                        <a href="https://www.instagram.com/g.kadi.services/" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@kservices8?_r=1&_t=ZS-94y5Yy23Uvw" target="_blank" rel="noopener noreferrer" class="social-link" title="TikTok">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <hr class="footer-divider">
