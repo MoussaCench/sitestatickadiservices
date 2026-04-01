@@ -6,6 +6,31 @@ document.addEventListener('DOMContentLoaded', function() {
     // Navbar scroll effect
     const navbar = document.querySelector('.navbar');
     let lastScroll = 0;
+    const heroVideo = document.querySelector('.hero-video');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const shouldDisableHeroVideo = prefersReducedMotion || window.innerWidth < 992;
+
+    if (heroVideo) {
+        const hideHeroVideo = () => {
+            heroVideo.pause();
+            heroVideo.classList.add('is-hidden');
+        };
+
+        if (shouldDisableHeroVideo) {
+            hideHeroVideo();
+        } else {
+            const playAttempt = heroVideo.play();
+
+            if (playAttempt && typeof playAttempt.catch === 'function') {
+                playAttempt.catch(() => {
+                    hideHeroVideo();
+                });
+            }
+
+            heroVideo.addEventListener('error', hideHeroVideo);
+            heroVideo.addEventListener('stalled', hideHeroVideo);
+        }
+    }
 
     window.addEventListener('scroll', function() {
         const currentScroll = window.pageYOffset;
@@ -116,8 +141,9 @@ document.addEventListener('DOMContentLoaded', function() {
 window.addEventListener('scroll', function() {
     const scrolled = window.pageYOffset;
     const heroOverlay = document.querySelector('.hero-overlay');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     
-    if (heroOverlay) {
+    if (heroOverlay && !prefersReducedMotion && window.innerWidth >= 992) {
         heroOverlay.style.transform = `translateY(${scrolled * 0.5}px)`;
     }
 });
