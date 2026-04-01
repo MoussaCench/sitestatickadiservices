@@ -1,0 +1,29 @@
+# robots.txt pour Kadi Services Auto Prestige
+# Lavage auto à domicile Bamako
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://kadiservices.ml/sitemap.xml
+
+# Crawl-delay pour éviter la surcharge
+Crawl-delay: 1
+
+# Bloquer les dossiers non nécessaires
+Disallow: /css/
+Disallow: /js/
+
+# Autoriser les images et vidéos
+Allow: /images/
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.webp$
+Allow: /*.mp4$
+Allow: /*.mov$
+
+# Autoriser les ressources importantes
+Allow: /index.html
+Allow: /sitemap.xml
