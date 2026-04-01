@@ -5,14 +5,10 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://kadiservices.ml/sitemap.xml
+Sitemap: https://prestige.kadiservices.site/sitemap.xml
 
 # Crawl-delay pour éviter la surcharge
 Crawl-delay: 1
-
-# Bloquer les dossiers non nécessaires
-Disallow: /css/
-Disallow: /js/
 
 # Autoriser les images et vidéos
 Allow: /images/
