@@ -38,10 +38,15 @@
     <meta name="twitter:description" content="Service automobile complet à domicile Bamako : Lavage, vidange, montage et collage de pneus. Disponible 7j/7 de 8h à 23h.">
     <meta name="twitter:image" content="https://res.cloudinary.com/dbi9atr3d/video/upload/v1774914544/gemini_generated_video_6FBDFDB9_mpoqhj.mov/preview.jpg">
     
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"></noscript>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     
@@ -215,7 +220,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#home">
-                <img src="images/logo-kadi.png" alt="Kadi Services" class="logo-nav">
+                <img src="images/logo-kadi.png" alt="Kadi Services" class="logo-nav" width="180" height="40" loading="eager">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -246,7 +251,7 @@
     <section id="home" class="hero-section">
         <!-- Hero Background Video -->
         <div class="hero-video-container">
-            <video autoplay muted loop playsinline class="hero-video">
+            <video autoplay muted loop playsinline class="hero-video" loading="lazy" preload="none" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1080'%3E%3Crect fill='%23000000' width='1920' height='1080'/%3E%3C/svg%3E">
                 <source src="https://res.cloudinary.com/dbi9atr3d/video/upload/v1774914544/gemini_generated_video_6FBDFDB9_mpoqhj.mov" type="video/mp4">
             </video>
         </div>
@@ -272,7 +277,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="hero-image animate-slide-in">
-                        <img src="images/app-mockup.png" alt="Application mobile Kadi Services Auto Prestige - Réservation lavage auto à domicile Bamako" class="app-mockup">
+                        <img src="images/app-mockup.png" alt="Application mobile Kadi Services Auto Prestige - Réservation lavage auto à domicile Bamako" class="app-mockup" width="358" height="696" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -711,7 +716,7 @@
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4">
-                    <img src="images/logo-kadi.png" alt="Kadi Services" class="logo-footer mb-3">
+                    <img src="images/logo-kadi.png" alt="Kadi Services" class="logo-footer mb-3" width="250" height="60" loading="lazy">
                     <p class="footer-text">Kadi Auto Prestige - La meilleure solution pour vos véhicules. Service de lavage automobile professionnel à domicile.</p>
                 </div>
                 <div class="col-lg-4">
@@ -750,7 +755,7 @@
                         <p>&copy; 2025 Kadi Services Auto Prestige. Tous droits réservés.</p>
                         <div class="footer-dev">
                             <span>Développé par</span>
-                            <img src="images/logo-smartml.png" alt="Smart ML" class="logo-dev" onerror="this.src='images/logo-smartml.jpg'; this.onerror=function(){this.src='images/logo-smartml.svg';};">
+                            <img src="images/logo-smartml.png" alt="Smart ML" class="logo-dev" width="120" height="40" loading="lazy" onerror="this.src='images/logo-smartml.jpg'; this.onerror=function(){this.src='images/logo-smartml.svg';};">
                         </div>
                     </div>
                 </div>
@@ -758,10 +763,10 @@
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="js/main.js"></script>
+    <!-- Bootstrap JS - Deferred -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <!-- Custom JS - Deferred -->
+    <script src="js/main.js" defer></script>
 </body>
 </html>
 
