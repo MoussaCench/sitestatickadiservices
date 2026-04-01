@@ -256,6 +256,26 @@ iframe {
     min-width: 0;
 }
 
+@media (min-width: 993px) {
+    .hero-section .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .hero-content {
+        padding-left: 2.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .hero-text {
+        max-width: 620px;
+    }
+
+    .hero-description {
+        max-width: 560px;
+    }
+}
+
 .hero-text h1 {
     font-size: 3rem;
     font-weight: 800;
