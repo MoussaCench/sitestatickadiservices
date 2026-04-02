@@ -5,7 +5,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Navbar scroll effect
     const navbar = document.querySelector('.navbar');
-    let lastScroll = 0;
     const heroVideo = document.querySelector('.hero-video');
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const shouldDisableHeroVideo = prefersReducedMotion || window.innerWidth < 992;
@@ -32,31 +31,26 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    window.addEventListener('scroll', function() {
-        const currentScroll = window.pageYOffset;
-        
-        if (currentScroll > 100) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-        
-        lastScroll = currentScroll;
-    });
-
     // Active nav link on scroll
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
-    function activeNavLink() {
+    let sectionPositions = [];
+    let ticking = false;
+
+    function updateSectionPositions() {
+        sectionPositions = Array.from(sections).map(section => ({
+            id: section.getAttribute('id'),
+            top: section.offsetTop
+        }));
+    }
+
+    function activeNavLink(currentScroll) {
         let current = '';
-        
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            
-            if (window.pageYOffset >= sectionTop - 200) {
-                current = section.getAttribute('id');
+
+        sectionPositions.forEach(section => {
+            if (currentScroll >= section.top - 200) {
+                current = section.id;
             }
         });
 
@@ -68,7 +62,28 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    window.addEventListener('scroll', activeNavLink);
+    function updateScrollState() {
+        const currentScroll = window.pageYOffset;
+
+        if (navbar) {
+            navbar.classList.toggle('scrolled', currentScroll > 100);
+        }
+
+        activeNavLink(currentScroll);
+        ticking = false;
+    }
+
+    function onScroll() {
+        if (!ticking) {
+            window.requestAnimationFrame(updateScrollState);
+            ticking = true;
+        }
+    }
+
+    updateSectionPositions();
+    updateScrollState();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', debounce(updateSectionPositions, 150), { passive: true });
 
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -180,16 +195,3 @@ function debounce(func, wait) {
         timeout = setTimeout(later, wait);
     };
 }
-
-// Optimized scroll handler
-const optimizedScrollHandler = debounce(function() {
-    // Your scroll code here
-}, 10);
-
-// ============================================
-// CONSOLE MESSAGE
-// ============================================
-
-console.log('%c Kadi Services Auto Prestige ', 'background: #000; color: #fff; font-size: 20px; padding: 10px;');
-console.log('%c Développé par SMART ML ', 'background: #000; color: #fff; font-size: 14px; padding: 5px;');
-
