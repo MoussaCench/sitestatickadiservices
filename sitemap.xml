@@ -5,39 +5,47 @@
     <!-- Page d'accueil -->
     <url>
         <loc>https://prestige.kadiservices.site/</loc>
-        <lastmod>2026-04-01</lastmod>
+        <lastmod>2026-04-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     
-    <!-- Section Services -->
+    <!-- Page Lavage Auto -->
     <url>
-        <loc>https://prestige.kadiservices.site/#services</loc>
-        <lastmod>2026-04-01</lastmod>
+        <loc>https://prestige.kadiservices.site/lavage-auto-bamako.html</loc>
+        <lastmod>2026-04-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     
-    <!-- Section Applications -->
+    <!-- Page Vidange -->
     <url>
-        <loc>https://prestige.kadiservices.site/#apps</loc>
-        <lastmod>2026-04-01</lastmod>
+        <loc>https://prestige.kadiservices.site/vidange-bamako.html</loc>
+        <lastmod>2026-04-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
-    <!-- Section FAQ -->
+    <!-- Page Pneus -->
     <url>
-        <loc>https://prestige.kadiservices.site/#faq</loc>
-        <lastmod>2026-04-01</lastmod>
+        <loc>https://prestige.kadiservices.site/montage-pneu-bamako.html</loc>
+        <lastmod>2026-04-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
-    <!-- Section Contact -->
+    <!-- Page FAQ -->
     <url>
-        <loc>https://prestige.kadiservices.site/#contact</loc>
-        <lastmod>2026-04-01</lastmod>
+        <loc>https://prestige.kadiservices.site/faq.html</loc>
+        <lastmod>2026-04-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Page Contact -->
+    <url>
+        <loc>https://prestige.kadiservices.site/contact.html</loc>
+        <lastmod>2026-04-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
